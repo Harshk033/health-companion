@@ -60,11 +60,13 @@ export default function App() {
     window.addEventListener('offline', handleOffline);
 
     // Register Service Worker for offline PWA functionality
-    if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
-      navigator.serviceWorker.register('/sw.js').catch((err) => {
-        console.log('SW registration skipped or error:', err);
-      });
-    }
+if ('serviceWorker' in navigator && import.meta.env.PROD) {
+  // Uses relative pathing so it respects your GitHub Pages repository subfolder
+  navigator.serviceWorker.register('./sw.js').catch((err) => {
+    console.log('SW registration skipped or error:', err);
+  });
+}
+
 
     return () => {
       window.removeEventListener('online', handleOnline);

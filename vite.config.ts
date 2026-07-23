@@ -1,8 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite' // Add this import
 
-// https://vitejs.dev
 export default defineConfig({
   base: '/health-companion/',
-  plugins: [react()],
+  plugins: [
+    tailwindcss(), 
+    react()
+  ],
 })
