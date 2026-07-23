@@ -1,0 +1,6 @@
+{
+  "name": "SwasthyaSeva",
+  "description": "Offline-first healthcare companion featuring AI symptom triage, diabetes self-management, health dashboard, clinician reports, visual skin analyzer, and local healthcare directory.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
