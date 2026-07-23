@@ -1,0 +1,15 @@
+{
+  "short_name": "AURA Health",
+  "name": "AURA AI Health Companion",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230d9488'><circle cx='12' cy='12' r='10'/><path d='M12 6v12M6 12h12' stroke='white' stroke-width='3'/></svg>",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0f172a",
+  "theme_color": "#0d9488",
+  "display": "standalone"
+}
